@@ -31,6 +31,12 @@ configurations {
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
+	// actuator
+	implementation 'org.springframework.boot:spring-boot-starter-actuator'
+	
+	compile "org.springframework.boot:spring-boot-devtools"
+	
+	// DB PostgreSQL
 	runtimeOnly 'org.postgresql:postgresql'
 	
 	// gradle 빌드하면 gradle5에서 lombok 관련 deprecated 오류 발생 버그 대응
