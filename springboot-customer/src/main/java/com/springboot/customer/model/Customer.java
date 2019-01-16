@@ -38,7 +38,6 @@ public class Customer {
 	)
 	private Long id;
 	
-	// @Column
 	@Column
 	private String name;
 	
